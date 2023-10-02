@@ -9,7 +9,7 @@ function change-mail-on-monitor {
         $pwMon = ""
 
         while (!$pwMon) {
-            Write-Host "Please enter ROOT password for monitor.omc.co.il - 77.247.180.45/185.167.99.99" -ForegroundColor Green -NoNewline
+            Write-Host "Please enter ROOT password for monitor.omc.co.il - " -ForegroundColor Green -NoNewline
             Write-Host " -foreground Yellow -backgroundcolor Black -nonewline"
             $pwMon = Read-Host " " -AsSecureString
             $pwMon = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($pwMon))
